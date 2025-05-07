@@ -79,10 +79,10 @@ for _ in range(num_records):
         
 try:
     # Save dataset
-    csv_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.csv" 
+    csv_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.csv" # Change the CSV path 
     df.to_csv(csv_path, index=4)
 
-    json_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.json"
+    json_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.json" # Change the JSON path 
     df.to_json(json_path, orient="records", indent=4)
     print("JSON file saved at:", json_path)
 
