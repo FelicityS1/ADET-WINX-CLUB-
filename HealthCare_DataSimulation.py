@@ -79,10 +79,10 @@ for _ in range(num_records):
         
 try:
     # Save dataset
-    csv_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.csv" # Change the CSV path 
+    csv_path = r"healthcare_data.csv" # Change the CSV path 
     df.to_csv(csv_path, index=4)
 
-    json_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.json" # Change the JSON path 
+    json_path = r"healthcare_data.json" # Change the JSON path 
     df.to_json(json_path, orient="records", indent=4)
     print("JSON file saved at:", json_path)
 
@@ -92,5 +92,5 @@ except Exception as e:
 
         
 # Generate and display simulated IoT data
-csv_path = r"C:\Users\Ken\Documents\MMDC 2025\healthcare_data.csv"
+csv_path = r"healthcare_data.csv" # Change the CSV path 
 df.to_csv(csv_path, index=False)
